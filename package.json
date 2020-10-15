@@ -1,0 +1,21 @@
+{
+  "name": "wallet-demo",
+  "version": "1.0.0",
+  "description": "Basic demo app able to create and manage wallets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "bip32": "^2.0.6",
+    "bip39": "^3.0.2",
+    "bitcoinjs-lib": "^5.2.0",
+    "heap": "^0.2.6",
+    "readline-sync": "^1.4.10",
+    "requestify": "^0.2.5"
+  },
+  "type": "module"
+}
