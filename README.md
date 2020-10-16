@@ -9,7 +9,7 @@ There´s not many shenanigans, just take in mind it´s a demo and certain checks
 One thing that may be confusing is the change address. By default, the first mnemonic saved in the `keys` file (will be generated if not present when the program is first run). To change it, one must first have the change address added to the keys file (creating one (`1`) or importing a mnemonic (`2`)), find out its number (`3`), and then use that number as input for `4`.
 
 ### Notes
-1. An Output (and maybe an Input too, haven´t checked that yet) will show `value: undefined` when the value of that output es 0 BTC.
+1. An Output (and maybe an Input too, haven´t checked that yet) will show `value: undefined` when the value of that output is 0 BTC.
 1. Option `6` will show transactions which are related with the addresses in the wallet in both of two ways:
     1. the transaction has an input from the address
     1. the transaction has an output from the addess
