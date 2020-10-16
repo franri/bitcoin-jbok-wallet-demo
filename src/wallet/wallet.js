@@ -121,10 +121,11 @@ class Wallet{
             if (!txsInfo[address]) txsInfo[address] = {};
             const currAddress = txsInfo[address];
             currAddress.address = address;
+            currAddress.txs = {}
             for (const tx of txs){
-                if (!currAddress[tx.hash]) currAddress[tx.hash] = {};
-                currAddress[tx.hash].hash = tx.hash;
-                const currTx = currAddress[tx.hash];
+                if (!currAddress.txs[tx.hash]) currAddress.txs[tx.hash] = {};
+                currAddress.txs[tx.hash].hash = tx.hash;
+                const currTx = currAddress.txs[tx.hash];
                 // paso de formato fecha+hora internacional a fecha uruguaya
                 currTx.date = tx.confirmed ? tx.confirmed.substring(0, tx.received.indexOf('T')).split('-').reverse().join('/') : 'not confirmed yet';
                 // agarro tx i/o s y separo en inputs y outputs
@@ -196,7 +197,6 @@ class Wallet{
 
     __appendToKeyFile(mnemonic){
 
-        fs.appendFileSync(this.keyAddress, '\n'+mnemonic);
         try {
             if (!fs.existsSync(this.keyAddress))
               fs.writeFileSync(this.keyAddress,'');
