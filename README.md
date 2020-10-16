@@ -1,6 +1,6 @@
 # bitcoin-jbok-wallet-demo
 
-Demo application made for Blockchain undergrad class. A nodejs program that manages a JBOK waallet, which generates, saves and loads its own mnemonics, makes and signs its own transactions, and uses BlockCypher's API to fetch info from and send TXs to the testnet.
+Demo application made for Blockchain undergrad class. A nodejs program that manages a JBOK wallet, which generates, saves and loads its own mnemonics, makes and signs its own transactions, and uses BlockCypher's API to fetch info from and send TXs to the testnet.
 
 ---
 
